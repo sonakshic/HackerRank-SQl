@@ -322,10 +322,45 @@ END
 FROM TRIANGLES;
 
 
+22 Revising Aggregations - The Count Function
+
+Query a count of the number of cities in CITY having a Population larger than .
+
+Input Format
+
+The CITY table is described as follows:
+
+select count(Population) from city where Population > 100000
 
 
+23 Revising Aggregations - The Sum Function
+
+Query the total population of all cities in CITY where District is California.
+
+Input Format
+
+The CITY table is described as follows:
+
+select sum(population) from city where District='California';
+
+24 Revising Aggregations - Averages
+
+Query the average population of all cities in CITY where District is California.
+
+Input Format
+
+The CITY table is described as follows:
+
+select avg(population) from city where District='California';
 
 
+25 Average Population
 
+Query the average population for all cities in CITY, rounded down to the nearest integer.
 
+Input Format
 
+The CITY table is described as follows:
+
+SELECT FLOOR(AVG(Population))
+FROM City;
